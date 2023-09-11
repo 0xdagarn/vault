@@ -1,11 +1,12 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import {Test, console2} from "forge-std/Test.sol";
-import {Counter} from "../src/Counter.sol";
+import "forge-std/Test.sol";
+import { PriceFeed } from "../src/PriceFeed.sol";
+import { Vault } from "../src/Vault.sol";
 
-contract CounterTest is Test {
-    Counter public counter;
+contract VaultTest is Test {
+    PriceFeed public priceFeed;
 
     function setUp() public {
         counter = new Counter();
