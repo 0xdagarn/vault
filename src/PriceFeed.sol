@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 interface IPriceFeed {
     function setPrice(uint256 _price) external;
-    function getPrice() external returns (uint256);
+    function getPrice() external view returns (uint256);
 }
 
 contract PriceFeed is IPriceFeed {
